@@ -1,0 +1,7 @@
+{
+  "output_dir": "output",
+  "batch_size": 100,
+  "eps": 0.6,
+  "min_samples": 2,
+  "last_link": "https://drive.google.com/drive/folders/1PWE9Y3zyUBf8nePyoucckuE8o7DH_2C_?usp=sharing"
+}

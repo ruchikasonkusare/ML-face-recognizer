@@ -89,24 +89,24 @@ def run_pipeline(drive_link,output_dir="output",batch_size=50,eps=0.6,min_sample
     print(f"FOund {total_photos} peoples")
     
     
-    # ..........Step 4.....
-    print(f"Step 4: Organizing groups in folder..")
-    group=load_groups()
-    organize_results(group,output_dir=output_dir)
+    # # ..........Step 4.....
+    # print(f"Step 4: Organizing groups in folder..")
+    # group=load_groups()
+    # organize_results(group,output_dir=output_dir)
     
-    print("\n" + "=" * 50)
-    print("✅ DONE!")
-    print("=" * 50)
-    print(f"📸 Total photos processed : {total_photos}")
-    print(f"👥 Total people found     : {total_people}")
-    print(f"📂 Output folder          : {output_dir}/")
-    print("\nPeople found:")
-    for person, faces in sorted(groups.items()):
-        photos = set(f["filename"] for f in faces)
-        print(f"  {person:12s} → {len(photos):3d} photos")
+    # print("\n" + "=" * 50)
+    # print("✅ DONE!")
+    # print("=" * 50)
+    # print(f"📸 Total photos processed : {total_photos}")
+    # print(f"👥 Total people found     : {total_people}")
+    # print(f"📂 Output folder          : {output_dir}/")
+    # print("\nPeople found:")
+    # for person, faces in sorted(groups.items()):
+    #     photos = set(f["filename"] for f in faces)
+    #     print(f"  {person:12s} → {len(photos):3d} photos")
 
-    print(f"\n✅ Check your '{output_dir}/' folder!")
-    return True
+    # print(f"\n✅ Check your '{output_dir}/' folder!")
+    # return True
 
 
 

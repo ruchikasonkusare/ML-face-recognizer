@@ -1,6 +1,11 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-API_KEY="AIzaSyCjVsbLzGx7bmuWkAFlQSLA_rpq-KqZDhI"
+load_dotenv()
+
+
+API_KEY=os.getenv("API_KEY")
 
 IMAGE_EXT =(".jpg",".jpeg",'.png',".webp",".bmp")
 
